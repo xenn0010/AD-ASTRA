@@ -1,0 +1,27 @@
+/etc/timezone is deprecated in some distros, and no longer reliable. tzlocal is ignoring it, and you can likely delete it.
+/home/yab/Ad-Astra/services/evolution-engine/app.py:498: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+INFO:     Started server process [43704]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8002 (Press CTRL+C to quit)
+[Evolution Engine] Started (evolution frequency: 48h)
+INFO:     127.0.0.1:49150 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34132 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54092 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43112 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50026 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50036 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39786 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39796 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33208 - "GET /health HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [43704]

@@ -1,0 +1,72 @@
+version: "3.9"
+services:
+  bandit:
+    build:
+      context: ../services/bandit
+      dockerfile: Dockerfile
+    environment:
+      - REDIS_URL=${REDIS_URL:-}
+    ports:
+      - "8000:8000"
+    networks:
+      - ad-astra-network
+
+  agent-orchestrator:
+    build:
+      context: ../services/agent-orchestrator
+      dockerfile: Dockerfile
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - OPENAI_MODEL=${OPENAI_MODEL:-gpt-4-turbo-preview}
+      - OPENAI_TEMPERATURE=${OPENAI_TEMPERATURE:-0.7}
+      - OPENAI_MAX_TOKENS=${OPENAI_MAX_TOKENS:-2000}
+      - CONVEX_HTTP_BASE=${CONVEX_HTTP_BASE}
+      - ADMIN_SECRET=${ADMIN_SECRET}
+      - PORT=8001
+    ports:
+      - "8001:8001"
+    networks:
+      - ad-astra-network
+    depends_on:
+      - bandit
+
+  evolution-engine:
+    build:
+      context: ../services/evolution-engine
+      dockerfile: Dockerfile
+    environment:
+      - CONVEX_HTTP_BASE=${CONVEX_HTTP_BASE}
+      - ADMIN_SECRET=${ADMIN_SECRET}
+      - AGENT_ORCHESTRATOR_URL=http://agent-orchestrator:8001
+      - EVOLUTION_FREQUENCY_HOURS=${EVOLUTION_FREQUENCY_HOURS:-48}
+      - BREEDING_POOL_PERCENTAGE=${BREEDING_POOL_PERCENTAGE:-20}
+      - MUTATION_RATE=${MUTATION_RATE:-0.15}
+      - MIN_INTERACTIONS_FOR_EVOLUTION=${MIN_INTERACTIONS_FOR_EVOLUTION:-1000}
+      - FITNESS_WEIGHT_CTR=${FITNESS_WEIGHT_CTR:-0.3}
+      - FITNESS_WEIGHT_CONVERSION=${FITNESS_WEIGHT_CONVERSION:-0.5}
+      - FITNESS_WEIGHT_REVENUE=${FITNESS_WEIGHT_REVENUE:-0.2}
+      - PORT=8002
+    ports:
+      - "8002:8002"
+    networks:
+      - ad-astra-network
+    depends_on:
+      - agent-orchestrator
+
+  offer-pages:
+    build:
+      context: ../web/offer-pages
+      dockerfile: Dockerfile
+    environment:
+      - PORT=8787
+      - CONVEX_HTTP_BASE=${CONVEX_HTTP_BASE}
+    ports:
+      - "8787:8787"
+    networks:
+      - ad-astra-network
+
+networks:
+  ad-astra-network:
+    driver: bridge
+
+

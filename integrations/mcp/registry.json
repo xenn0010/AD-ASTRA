@@ -1,0 +1,11 @@
+{
+	"tools": [
+		{ "name": "googleAds", "capabilities": ["read", "write"] },
+		{ "name": "metaAds", "capabilities": ["read", "write"] },
+		{ "name": "xAds", "capabilities": ["read", "write"] },
+		{ "name": "redditAds", "capabilities": ["read", "write"] },
+		{ "name": "ga4", "capabilities": ["read"] },
+		{ "name": "storage", "capabilities": ["read", "write"] }
+	]
+}
+

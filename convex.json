@@ -1,0 +1,6 @@
+{
+  "functions": "backend/convex/",
+  "node": {
+    "version": "20"
+  }
+}

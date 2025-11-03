@@ -1,0 +1,17 @@
+{
+  "name": "ad-astra",
+  "version": "1.0.0",
+  "description": "AI-powered agent-based advertising platform",
+  "type": "module",
+  "scripts": {
+    "dev": "convex dev",
+    "deploy": "convex deploy"
+  },
+  "dependencies": {
+    "convex": "^1.17.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
