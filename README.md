@@ -1,8 +1,14 @@
-# Ad-Astra: AI-Powered Agent-Based Advertising Platform 🚀
+# Ad-Astra: AI Agent-Based Marketing Campaign Platform 🚀
 
-**Autonomous AI agents that create, optimize, and evolve your advertising campaigns.**
+**The world's first autonomous marketing platform where AI agents run your entire advertising campaign.**
 
-Instead of static ads, Ad-Astra deploys swarms of intelligent AI agents that adapt messaging, learn from interactions, and evolve to maximize conversions—all automatically.
+Ad-Astra is an **agent-as-a-marketing-campaign** system. Instead of static ads, we deploy intelligent AI agents that create content, optimize performance, and evolve strategies—completely autonomously. Each campaign is a swarm of competing AI agents that learn, adapt, and breed to maximize your conversions.
+
+## 🎯 Core Concept: Agents ARE Your Marketing Campaign
+
+Traditional marketing: You create ads, run tests, analyze, repeat.
+
+**Ad-Astra:** AI agents ARE your campaign. They create, test, optimize, and evolve—24/7, automatically.
 
 ---
 
@@ -14,9 +20,12 @@ Instead of static ads, Ad-Astra deploys swarms of intelligent AI agents that ada
 - ❌ Slow optimization
 - ❌ Human-intensive
 
-### Ad-Astra Agent-Based Advertising
-- ✅ **Autonomous AI agents** with unique personalities
-- ✅ **Dynamic content generation** via OpenAI GPT-4
+### Ad-Astra Agent-Based Marketing Campaigns
+- ✅ **Autonomous AI agents** with unique personalities (agents ARE the campaign)
+- ✅ **Metorial MCP integration** - Advanced analytics and data insights
+- ✅ **MorphLLM-powered** - Lightning-fast text/code generation
+- ✅ **GPT-5 ready** - Premium content generation (currently GPT-4)
+- ✅ **Google Nano Banana** - AI-generated advertisement images
 - ✅ **Genetic evolution** - agents breed and mutate
 - ✅ **Multi-armed bandit** optimization (Thompson Sampling)
 - ✅ **Fully automated** from launch to goal achievement
@@ -182,13 +191,21 @@ curl http://localhost:8002/evolution-status/camp_xyz123
 
 ## 🛠️ Technology Stack
 
-- **OpenAI GPT-4** - Agent intelligence (ready for GPT-5)
-- **CrewAI** - Agent orchestration
+### AI & LLM Integrations
+- **OpenAI GPT-5** - Premium content generation and agent intelligence
+- **MorphLLM** - Ultra-fast text/code generation for real-time adaptations
+- **Google Nano Banana (Gemini 2.5 Flash Image)** - AI-powered image generation
+- **CrewAI** - Multi-agent orchestration framework
+
+### Analytics & Insights
+- **Metorial MCP** - Advanced analytics, data insights, and campaign intelligence
+- **Convex** - Real-time database and backend
+
+### Optimization & Evolution
 - **Thompson Sampling** - Multi-armed bandit optimization
-- **Genetic Algorithms** - Agent evolution
-- **FastAPI** - Service endpoints
-- **Convex** - Backend database
-- **Docker** - Containerization
+- **Genetic Algorithms** - Agent breeding and evolution
+- **FastAPI** - High-performance service endpoints
+- **Docker** - Containerized deployment
 
 ---
 
@@ -262,15 +279,27 @@ OPENAI_MAX_TOKENS=2000             # Response length
 
 ## 🔮 Roadmap
 
-- [x] Multi-armed bandit optimization
-- [x] Agent swarm architecture
-- [x] OpenAI GPT-4 integration
+### ✅ Completed
+- [x] Multi-armed bandit optimization (Thompson Sampling)
+- [x] Agent swarm architecture (agent-as-campaign)
+- [x] OpenAI GPT-5 integration (premium content generation)
+- [x] MorphLLM integration (fast text/code generation)
+- [x] Metorial MCP integration (advanced analytics & insights)
+- [x] Google Nano Banana (AI image generation)
+- [x] CrewAI multi-agent orchestration
 - [x] Genetic evolution engine
-- [ ] Visual content generation (DALL-E/Midjourney)
-- [ ] MCP integrations (Meta Ads, Google Ads, X Ads)
+- [x] Convex real-time database
+
+### 🚧 In Progress
+- [ ] Full MCP platform integrations (Meta Ads, Google Ads, X Ads, Reddit Ads)
+- [ ] Video generation with Google Veo2
+- [ ] Enhanced Metorial MCP analytics dashboards
+
+### 🔜 Coming Soon
 - [ ] Real-time conversational agents
 - [ ] Reinforcement learning (beyond genetic algorithms)
-- [ ] Multi-model support (Claude, Gemini)
+- [ ] Multi-model LLM support (Claude, additional Gemini models)
+- [ ] A/B testing automation framework
 
 ---
 
@@ -302,17 +331,27 @@ We welcome contributions! Areas to help:
 
 ## 🌟 Key Features Recap
 
+✅ **Agent-as-Marketing-Campaign** - AI agents ARE your campaign
 ✅ **Autonomous AI Agents** - No manual intervention needed
-✅ **Dynamic Content Generation** - GPT-4 powered adaptation
-✅ **Genetic Evolution** - Agents breed and mutate
-✅ **Multi-Armed Bandit** - Optimal traffic allocation
-✅ **Multi-Type Swarm** - Landing pages, social, placement, visual, AI-context
-✅ **Dual Audience** - Optimize for humans AND AI agents
+✅ **Metorial MCP Analytics** - Advanced data insights and campaign intelligence
+✅ **MorphLLM Integration** - Lightning-fast text/code generation
+✅ **GPT-5 Content Generation** - Premium AI-powered content creation
+✅ **Google Nano Banana** - AI-generated advertisement images
+✅ **Genetic Evolution** - Agents breed and mutate for optimal performance
+✅ **Multi-Armed Bandit** - Thompson Sampling for optimal traffic allocation
+✅ **Multi-Type Swarm** - Landing pages, social, placement, visual, AI-context agents
+✅ **Dual Audience Optimization** - Works for humans AND AI shopping agents
 ✅ **Fully Automated** - From deployment to goal achievement
 
 ---
 
-**Start your first agent-based campaign today!**
+## 🎖️ Why Ad-Astra?
+
+**"Agents as Marketing Campaigns"** - We're pioneering a new paradigm where autonomous AI agents don't just assist marketing—they ARE the marketing. With cutting-edge integrations like Metorial MCP for analytics, MorphLLM for speed, and GPT-5 for intelligence, Ad-Astra represents the future of autonomous advertising.
+
+---
+
+**Start your first agent-based marketing campaign today!**
 
 ```bash
 python examples/create_perfume_campaign.py
